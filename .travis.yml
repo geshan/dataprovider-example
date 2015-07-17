@@ -1,4 +1,10 @@
+sudo: false
+
 language: php
+
+addons:
+  code_climate:
+    repo_token: a98e9dec7caee5ccee3b2dd7c94def888eab4833990e5cb83855f45bea640c7b
 
 php:
   - 5.4
@@ -7,6 +13,11 @@ php:
   - hhvm
 
 before_script:
+  - mkdir -p buid/logs
   - composer install --dev --prefer-source
 
-script: phpunit --bootstrap=vendor/autoload.php --colors tests
+script: phpunit --bootstrap=vendor/autoload.php --colors tests --coverage-clover build/logs/clover.xml
+
+after_success:
+  - composer require codeclimate/php-test-reporter --dev
+  - vendor/bin/test-reporter
