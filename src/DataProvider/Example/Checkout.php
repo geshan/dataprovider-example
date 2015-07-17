@@ -6,10 +6,10 @@ namespace DataProvider\Example;
  * A simple test checkout class for the data provider example
  *
  */
-class Checkout 
+class Checkout
 {
     protected $total;
-    protected $cashOnDeliveryFee = 0;
+    protected $cashOnDeliveryFee = 0.0;
     protected $subTotal;
     protected $paymentMethod;
 
@@ -28,7 +28,7 @@ class Checkout
         
         $this->total = $this->subTotal + $this->cashOnDeliveryFee;
     }
-    
+
     /**
      * 
      * @return type
@@ -37,7 +37,7 @@ class Checkout
     {
         return $this->total;
     }
-    
+
     /**
      * 
      * @param type $total
@@ -46,5 +46,4 @@ class Checkout
     {
         $this->total = $total;
     }
-          
 }
