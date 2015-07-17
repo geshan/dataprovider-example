@@ -2,7 +2,7 @@
     "name": "data-provider/example",
     "description": "An example of the DataProvider in PHP Unit.",
     "require-dev": {
-        "phpunit/phpunit": "3.7.*"
+        "phpunit/phpunit": "4.7.*"
     },
     "license": "MIT",
     "authors": [
@@ -12,9 +12,9 @@
         }
     ],
     "autoload": {
-        "psr-0": {
-            "DataProvider\\Example": "src/",
-            "DataProvider\\Example\\Test":  "tests/"
+        "psr-4": {
+            "DataProvider\\Example\\": "src/DataProvider/Example",
+            "DataProvider\\Example\\Test\\":  "tests/DataProvider/Example/Test"
         }
     },
      "require": {

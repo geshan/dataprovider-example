@@ -1,8 +1,21 @@
 # Data Provider Example
 
+## Build
+
 [![Build Status](https://api.travis-ci.org/geshan/dataprovider-example.png)](https://travis-ci.org/geshan/dataprovider-example)
 
+## Code Quality
+
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/56ff09b2-7954-4cb2-a6da-6af863775107/small.png)](https://insight.sensiolabs.com/projects/56ff09b2-7954-4cb2-a6da-6af863775107)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/geshan/dataprovider-example/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/geshan/dataprovider-example/?branch=master)
+[![Code Climate](https://codeclimate.com/github/geshan/dataprovider-example/badges/gpa.svg)](https://codeclimate.com/github/geshan/dataprovider-example)
+[![Codacy Badge](https://www.codacy.com/project/badge/3cdbf95d64b149cc9292bf77150af276)](https://www.codacy.com/app/geshan/dataprovider-example)
+
+## Code Style
+
+[![StyleCI](https://styleci.io/repos/16403318/shield)](https://styleci.io/repos/16403318)
+
+## Description
 
 This is a simple example of using data provider in PHP Unit. It can be used to
 write less test with multiple data sets keeping the code coverage high.

@@ -30,10 +30,10 @@ class CheckoutTest extends PHPUnit_Framework_TestCase
     */
     public function paymentMethodProvider()
     {
-        return array(
-            array('Cash', 100.00),
-            array('Credit Card', 95.00)
-        );
+        return [
+            ['Cash', 100.00],
+            ['Credit Card', 95.00]
+        ];
     }
 
     /**
