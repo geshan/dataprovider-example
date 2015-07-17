@@ -31,10 +31,10 @@ write less test with multiple data sets keeping the code coverage high.
     */
     public function paymentMethodProvider()
     {
-        return array(
-            array('Cash', 100.00),
-            array('Credit Card', 95.00)
-        );
+        return [
+            ['Cash', 100.00],
+            ['Credit Card', 95.00],
+        ];
     }
 
     /**
@@ -80,3 +80,16 @@ phpunit --bootstrap=vendor/autoload.php tests
 
 
 ```
+
+## Available in packagist
+
+The package is availabe in [packagist](http://bit.ly/1tLI2AC). You can use it for reference by adding the followign line
+to you composer.json file
+
+```
+"data-provider/example" : "0.0.2",
+```
+
+## What Next?
+
+Issues are put in HuBorad, do have a [look](http://bit.ly/1Dkepso).

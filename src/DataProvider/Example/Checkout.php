@@ -8,9 +8,10 @@ namespace DataProvider\Example;
  */
 class Checkout
 {
-    protected $total;
+    protected $total=0.0;
     protected $cashOnDeliveryFee = 0.0;
-    protected $subTotal;
+    protected $subTotal=0.0;
+
     protected $paymentMethod;
 
     /**
@@ -31,7 +32,7 @@ class Checkout
 
     /**
      * 
-     * @return type
+     * @return double
      */
     public function getTotal()
     {
@@ -40,7 +41,7 @@ class Checkout
 
     /**
      * 
-     * @param type $total
+     * @param float double
      */
     public function setTotal($total)
     {
