@@ -93,3 +93,7 @@ to you composer.json file
 ## What Next?
 
 Issues are put in HuBorad, do have a [look](http://bit.ly/1Dkepso).
+
+## Contribution Guide
+
+This is just an example
