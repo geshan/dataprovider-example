@@ -6,33 +6,32 @@ use DataProvider\Example\Checkout;
 use PHPUnit_Framework_TestCase;
 
 /**
- * Checkout test for Cash and Credit card
+ * Checkout test for Cash and Credit card.
  */
 class CheckoutTest extends PHPUnit_Framework_TestCase
 {
     /**
-     *
      * @var Checkout
      */
     protected $checkout;
-    
+
     public function setup()
     {
         $this->checkout = new Checkout();
     }
-    
-   /**
-    * Data provider for testCalculateTotal
-    * variables are in the order of
-    * $paymentMethod, $expectedTotal
-    * 
-    * @return type
-    */
+
+    /**
+     * Data provider for testCalculateTotal
+     * variables are in the order of
+     * $paymentMethod, $expectedTotal.
+     * 
+     * @return type
+     */
     public function paymentMethodProvider()
     {
         return [
             ['Cash', 100.00],
-            ['Credit Card', 95.00]
+            ['Credit Card', 95.00],
         ];
     }
 
@@ -41,7 +40,7 @@ class CheckoutTest extends PHPUnit_Framework_TestCase
      * for given payment method.
      * 
      * @param string $paymentMethod
-     * @param float $expectedTotal
+     * @param float  $expectedTotal
      * 
      * @dataProvider paymentMethodProvider
      */
@@ -49,10 +48,9 @@ class CheckoutTest extends PHPUnit_Framework_TestCase
     {
         $this->checkout->calculateTotal($paymentMethod);
         $this->assertEquals(
-            $this->checkout->getTotal(), 
+            $this->checkout->getTotal(),
             $expectedTotal,
             sprintf('Testing total calculation for %s.', $paymentMethod)
         );
     }
-    
 }
