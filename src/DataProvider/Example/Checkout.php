@@ -3,14 +3,13 @@
 namespace DataProvider\Example;
 
 /**
- * A simple test checkout class for the data provider example
- *
+ * A simple test checkout class for the data provider example.
  */
 class Checkout
 {
-    protected $total=0.0;
+    protected $total = 0.0;
     protected $cashOnDeliveryFee = 0.0;
-    protected $subTotal=0.0;
+    protected $subTotal = 0.0;
 
     protected $paymentMethod;
 
@@ -26,13 +25,12 @@ class Checkout
         if ($paymentMethod == 'Cash') {
             $this->cashOnDeliveryFee = 5.00;
         }
-        
+
         $this->total = $this->subTotal + $this->cashOnDeliveryFee;
     }
 
     /**
-     * 
-     * @return double
+     * @return float
      */
     public function getTotal()
     {
@@ -40,7 +38,6 @@ class Checkout
     }
 
     /**
-     * 
      * @param float double
      */
     public function setTotal($total)
