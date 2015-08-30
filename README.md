@@ -75,9 +75,7 @@ You can run composer update
 and then run the tests using the command below on folder where the repo is cloned.
 
 ```
-
 phpunit --bootstrap=vendor/autoload.php tests
-
 
 ```
 
