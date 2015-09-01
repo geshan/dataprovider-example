@@ -12,5 +12,5 @@ dependencies:
 
 test:
   override:
-    - docker run -v $(pwd):/var/www geshan/php-composer-alpine "./vendor/bin/phpunit"
+    - docker run -v $(pwd):/var/www geshan/php-composer-alpine "./vendor/bin/phpunit --bootstrap=vendor/autoload.php tests"
 
