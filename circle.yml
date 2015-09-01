@@ -4,6 +4,7 @@ machine:
 
 dependencies:
   override:
+    - pwd
     - docker info
     - docker pull geshan/php-composer-alpine
     - docker run -v $(pwd):/var/www geshan/php-composer-alpine "composer install --prefer-dist"
